@@ -1,4 +1,7 @@
-# G. Anthem of Berland(Codeforces 808) - KMP + DP
+# G. Anthem of Berland(Codeforces 808)  
+
+`DP`      `KMP`
+
 给定一个含小写字母和?的s串和一个含小写字母的t串，其中?可以匹配任意字符，求s串最多匹配t串多少次。
 ## 链接
 [Codeforces 808-G](http://codeforces.com/contest/808/problem/G)

@@ -1,5 +1,9 @@
-# E. Okabe and El Psy Kongroo(Codeforces 821) - DP + Matrix_quick_power
+# E. Okabe and El Psy Kongroo(Codeforces 821)
+
+`DP`      `Matrix_quick_power`
+
 从非负整点网格中的(0,0)走到(k,0)，每一步只能走到右上、正右和右下三个点，要求不能超过给定的n条水平线(a1,b1,c1),(a2,b2,c2),...,(an,bn,cn)。其中，ci为纵坐标且横坐标不间断。求所有可能路线的数量。
+
 ## 链接
 [Codeforces 821-E](http://codeforces.com/problemset/problem/821/E)
 ## 分析
@@ -11,7 +15,7 @@
    (边界另行处理)。其中，valid(i,j)表示(i,j)是否可以走。
    边界条件：d(0,0)=1
    最终解：d(k,0)
-   由于k=*$O(10^{18})$*​，不仅时间复杂度会爆炸，内存也会超。
+   由于k=*$O(10^{18})$*，不仅时间复杂度会爆炸，内存也会超。
    认真观察状态转移发现，i其实没用，只是机械地加1，可以去掉。于是
    $$
    \left[ \begin{matrix} d(15) \\ d(14) \\ d(13) \\ \vdots \\ d(2) \\ d(1) \\ d(0) \\ \end{matrix} \right]
