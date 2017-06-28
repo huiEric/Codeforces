@@ -1,7 +1,7 @@
 # G. Anthem of Berland(Codeforces 808) - KMP + DP
 给定一个含小写字母和?的s串和一个含小写字母的t串，其中?可以匹配任意字符，求s串最多匹配t串多少次。
 ## 链接
-[Codeforces 808](http://codeforces.com/contest/808/problem/G)
+[Codeforces 808-G](http://codeforces.com/contest/808/problem/G)
 ## 题解
 ### 算法思路
 使用DP
@@ -15,11 +15,11 @@
 ch(j,c)使用KMP算法中的失配函数计算。先依次接上t中的字符，最大匹配长度即为该字符序号。接上任意字符时通过失配函数转移到之前已经计算过的状态即得最大匹配长度。
 ### 复杂度分析
 1. 空间复杂度
-   s和t长度小于10^5，因此空间复杂度为**O(10^5)**，占用内存k*10MB，k<10。
+   s和t长度小于$10^5$，因此空间复杂度为*$O(10^5)$* ，占用内存k*10MB，k<10。
 2. 时间复杂度
-   设n=len(s)，m=len(t)，状态数*O(mn)* 个，决策小于26个，总时间复杂度为*O(mn)*
+   设n=len(s)，m=len(t)，状态数*O(mn)* 个，决策小于26个，总时间复杂度为*O(mn)* 。
 ## 示例
-```
+```c++
 ??c????? //s串
 abcab //t串
 
